@@ -26,6 +26,7 @@ const SIDEBAR_ITEM_SX = {
   mx: 1,
   my: 0.25,
   color: "inherit",
+  paddingY: 0.5,
   boxShadow: "inset 2px 0 0 transparent",
   transition: (theme) =>
     theme.transitions.create(["box-shadow", "background-color"], {
@@ -44,12 +45,10 @@ const SIDEBAR_ITEM_SX = {
   "&.Mui-selected": {
     backgroundColor: "rgba(255, 255, 255, 0.08)",
     color: "inherit",
-    boxShadow: (theme) =>
-      `inset 3px 0 0 ${theme.palette.primary.main}`,
+    boxShadow: (theme) => `inset 3px 0 0 ${theme.palette.primary.main}`,
     "&:hover": {
       backgroundColor: "rgba(255, 255, 255, 0.12)",
-      boxShadow: (theme) =>
-        `inset 3px 0 0 ${theme.palette.primary.main}`,
+      boxShadow: (theme) => `inset 3px 0 0 ${theme.palette.primary.main}`,
     },
     "& .MuiListItemIcon-root": {
       color: "inherit",

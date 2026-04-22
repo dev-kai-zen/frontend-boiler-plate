@@ -23,7 +23,7 @@ export const MENU_ITEMS = [
   },
   {
     key: "normal-route",
-    path: "/home",
+    path: "/normal-route",
     label: "Single Route",
     icon: AltRouteIcon,
     permission: null,
@@ -31,7 +31,7 @@ export const MENU_ITEMS = [
   },
   {
     key: "sample-routes",
-    label: "Sample Routes With Children",
+    label: "Sample",
     icon: AltRouteIcon,
     permission: null,
     children: [
@@ -42,6 +42,14 @@ export const MENU_ITEMS = [
         // icon: School,
         // permission: PERMISSIONS.MESH.TAKE_EXAM,
         // element: <AssessmentTrainingPage />,
+      },
+      {
+        key: "normal-route-2",
+        path: "/normal-route-2",
+        label: "Single Route 2",
+        icon: AltRouteIcon,
+        permission: null,
+        element: <HomePage />,
       },
     ],
   },

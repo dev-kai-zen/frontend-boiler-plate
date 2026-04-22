@@ -8,12 +8,8 @@ const ThemeToggle = () => {
 
   return (
     <IconButton onClick={toggleColorMode}>
-      {mode === "dark" ? (
-        <Brightness7  />
-      ) : (
-        <Brightness4  />
-      )}
-    </IconButton> 
+      {mode === "dark" ? <Brightness7 /> : <Brightness4 />}
+    </IconButton>
   );
 };
 
